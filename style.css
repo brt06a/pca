@@ -131,28 +131,14 @@ nav a {
   gap: 20px;
 }
 
-.course-card {
-  width: 200px;
-  height: 150px;
-  background: rgba(255, 255, 255, 0.1);
-  backdrop-filter: blur(10px);
-  border-radius: 20px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  transition: 0.4s;
+.course-card:hover {
+  transform: translateY(-10px);
 }
 
 .course-card h3 {
   font-size: 18px;
   color: #fff;
 }
-
-.course-card:hover {
-  transform: translateY(-8px);
-  background: #4f46e5;
-}
-
 /* Browse Button */
 .browse-btn {
   margin-top: 40px;
