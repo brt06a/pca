@@ -15,46 +15,59 @@
   <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js"></script>
 </head>
 <body>
+  <!-- Header -->
   <header class="header">
     <div class="logo">E-Online.</div>
     <nav>
       <a href="#">Home</a>
       <a href="#">Category</a>
       <a href="#">Course</a>
-      <a href="#">Sign Up</a>
+      <a href="#" class="signup-btn">Sign Up</a>
     </nav>
   </header>
 
+  <!-- Hero Section -->
   <section class="hero">
-    <div class="hero-text">
-      <h1>Investing in <span>Knowledge</span> and <br> Your Future</h1>
+    <div class="hero-content">
+      <h1>Investing in <span>Knowledge</span> and <span>Your Future</span></h1>
       <p>Our e-learning program has been developed to be a vehicle of distributing multilateral learning solutions for your business.</p>
-      <div class="hero-buttons">
+
+      <div class="hero-stats">
         <button class="contact-btn">Contact</button>
         <div class="stats">
-          <div>50+<br>Career Courses</div>
-          <div>1M+<br>Our Students</div>
+          <div><strong>50+</strong><br>Career Courses</div>
+          <div><strong>1M+</strong><br>Our Students</div>
         </div>
       </div>
     </div>
 
     <div class="hero-image">
-      <img src="https://i.ibb.co/0CkVdH9/learning-hero.png" alt="Learning Hero">
-      <div class="learning-chart">Learning Chart 📈</div>
+      <img src="https://i.ibb.co/0CkVdH9/learning-hero.png" alt="Student Image">
+      <div class="chart">📈 Learning Chart</div>
     </div>
   </section>
 
-  <section class="browse-courses">
+  <!-- Courses Section -->
+  <section class="courses-section">
     <h2>Browse Top Essential Career Courses</h2>
-    <div class="courses">
-      <div class="course-card">🎨 UI/UX Design</div>
-      <div class="course-card">💻 Web Development</div>
-      <div class="course-card">📈 Digital Marketing</div>
-      <div class="course-card">🎯 Practical Learning</div>
+    <div class="courses-grid">
+      <div class="course-card uiux">
+        <h3>🎨 UI/UX Design</h3>
+      </div>
+      <div class="course-card webdev">
+        <h3>💻 Web Development</h3>
+      </div>
+      <div class="course-card marketing">
+        <h3>📈 Digital Marketing</h3>
+      </div>
+      <div class="course-card practical">
+        <h3>🎯 Practical Learning</h3>
+      </div>
     </div>
-    <button class="browse-all-btn">Browse All</button>
+    <button class="browse-btn">Browse All</button>
   </section>
 
+  <!-- Scripts -->
   <script src="firebase.js"></script>
   <script src="supabase.js"></script>
   <script src="app.js"></script>
