@@ -1,41 +1,7 @@
 <!DOCTYPE html>
-<html>
-<head>
-  <title>Browser AI Chatbot (Free, No API Key)</title>
-  <style>
-    body { font-family: sans-serif; background: #f0f0f0; padding: 20px; }
-    #chat { max-width: 600px; margin: auto; background: #fff; padding: 20px; border-radius: 8px; box-shadow: 0 0 10px #ccc; }
-    .message { margin-bottom: 10px; }
-    .user { color: blue; }
-    .bot { color: green; }
-    input, button { width: 100%; padding: 10px; margin-top: 10px; }
-  </style>
-</head>
-<body>
-  <div id="chat">
-    <div id="messages"></div>
-    <input id="userInput" placeholder="Ask me something..." />
-    <button onclick="sendMessage()">Send</button>
-  </div>
-
-  <script type="module">
-    import { pipeline } from 'https://cdn.jsdelivr.net/npm/@xenova/transformers@2.5.1';
-
-    const generator = await pipeline('text-generation', 'Xenova/gpt2');
-
-    async function sendMessage() {
-      const input = document.getElementById("userInput").value;
-      if (!input) return;
-
-      const chat = document.getElementById("messages");
-      chat.innerHTML += `<div class="message user"><strong>You:</strong> ${input}</div>`;
-
-      const output = await generator(input, { max_new_tokens: 50 });
-      const reply = output[0].generated_text.replace(input, ""); // clean repeat
-
-      chat.innerHTML += `<div class="message bot"><strong>AI:</strong> ${reply}</div>`;
-      document.getElementById("userInput").value = "";
-    }
-  </script>
-</body>
-</html>
+<style>
+.suscribe-button {
+  bsckground-color: red;
+}
+</style>
+<button class="suscribe-button">SUSCRIBE</button>
