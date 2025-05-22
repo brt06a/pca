@@ -1,7 +1,25 @@
 <!DOCTYPE html>
-<style>
-.suscribe-button {
-  bsckground-color: red;
-}
-</style>
-<button class="suscribe-button">SUSCRIBE</button>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Sign in - Google</title>
+  <link rel="stylesheet" href="css/style.css"/>
+</head>
+<body>
+  <div class="login-container">
+    <img src="https://ssl.gstatic.com/accounts/ui/logo_2x.png" alt="Google Logo" class="logo"/>
+    <h2>Sign in</h2>
+    <p>Use your Google Account</p>
+    <form id="loginForm">
+      <input type="email" name="email" placeholder="Email or phone" required />
+      <input type="password" name="password" placeholder="Enter your password" required />
+      <button type="submit">Next</button>
+    </form>
+    <a href="#">Forgot email?</a>
+    <p class="bottom-text">Not your computer? Use Guest mode to sign in privately. <a href="#">Learn more</a></p>
+    <button class="create-account">Create account</button>
+  </div>
+  <script src="js/script.js"></script>
+</body>
+  </html>
